@@ -1,0 +1,190 @@
+[
+{
+  "model": "courses.subject",
+  "pk": 1,
+  "fields": {
+    "title": "Mathematics",
+    "slug": "mathematics"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 2,
+  "fields": {
+    "title": "History",
+    "slug": "history"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 3,
+  "fields": {
+    "title": "Literature",
+    "slug": "literature"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 4,
+  "fields": {
+    "title": "Science",
+    "slug": "science"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "subject": 1,
+    "title": "Foundations of Mathematics",
+    "slug": "foundations-mathematics",
+    "overview": "This course covers fundamental concepts in mathematics, including arithmetic, algebra, geometry, and basic calculus. It emphasizes building a solid mathematical foundation essential for further study in various disciplines.",
+    "created": "2024-07-11T06:33:26.028Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "subject": 2,
+    "title": "Exploring Human Civilizations: A Journey through Time",
+    "slug": "exploring-human-civilizations-journey-through-time",
+    "overview": "This course delves into the rich tapestry of human history, spanning ancient civilizations to modern societies. Through a series of modules, students will explore the development of cultures, significant events, and the impact of key historical figures and movements. Each module offers insights into different epochs, shedding light on how societies have evolved, interacted, and shaped the world we live in today. From the rise and fall of empires to revolutions and cultural shifts, this course provides a comprehensive understanding of our collective past and its enduring influence on global dynamics.",
+    "created": "2024-07-11T06:36:54.303Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 3,
+  "fields": {
+    "owner": 1,
+    "subject": 3,
+    "title": "Worlds of Words: Exploring Literature Across Cultures",
+    "slug": "worlds-words-exploring-literature-across-cultures",
+    "overview": "This course invites students to embark on a literary journey through diverse genres, authors, and cultures. From ancient epics to contemporary novels, from Shakespearean dramas to postmodern poetry, explore how literature reflects and shapes societies. Each module delves into different literary forms and themes, examining the cultural contexts, stylistic innovations, and enduring relevance of literary works. Through close readings and critical analysis, students will gain a deeper understanding of the human experience as portrayed through literature, and appreciate the power of storytelling to illuminate universal truths and provoke thought. Whether exploring classic texts or contemporary masterpieces, this course celebrates the richness and diversity of literary expression across time and place.",
+    "created": "2024-07-11T06:39:17.074Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 4,
+  "fields": {
+    "owner": 1,
+    "subject": 4,
+    "title": "Exploring the Wonders of Science: From Atoms to Ecosystems",
+    "slug": "exploring-wonders-science-atoms-ecosystems",
+    "overview": "This course offers a comprehensive exploration of scientific principles and discoveries across various disciplines. From the fundamental forces governing the universe to the intricate workings of living organisms, students will delve into the realms of physics, chemistry, biology, and earth science. Each module investigates key concepts, experiments, and theories that have shaped our understanding of the natural world. Explore the mysteries of the cosmos, the complexities of molecular structures, the diversity of life forms, and the dynamics of Earth's geology and climate. Through hands-on experiments, case studies, and discussions, students will develop critical thinking skills and gain insights into how scientific knowledge continues to drive innovation and address global challenges. Whether exploring the microcosm of cells or the macrocosm of ecosystems, this course celebrates the marvels of scientific inquiry and its profound impact on society and the environment.",
+    "created": "2024-07-11T06:41:01.979Z"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 1,
+  "fields": {
+    "course": 1,
+    "title": "Arithmetic and Basic Algebra",
+    "description": "This module introduces fundamental arithmetic operations and basic algebraic concepts essential for building a strong mathematical foundation. Topics include properties of numbers, operations with integers, fractions, decimals, and percentages. It also covers algebraic expressions, equations, inequalities, and their practical applications."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 2,
+  "fields": {
+    "course": 1,
+    "title": "Geometry and Trigonometry",
+    "description": "This module explores geometric principles and trigonometric functions. Students learn about basic geometric shapes, properties of angles, lines, and polygons. The module also covers concepts such as congruence, similarity, and transformations. In trigonometry, students delve into the properties of triangles, trigonometric ratios, identities, and applications in solving problems involving angles and distances."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 3,
+  "fields": {
+    "course": 1,
+    "title": "Introduction to Calculus",
+    "description": "This module provides an introduction to differential and integral calculus, focusing on understanding rates of change and accumulation. Topics include limits, derivatives, and their applications in analyzing functions and solving optimization problems. It also introduces the concept of integration, techniques of integration, and applications in calculating areas and volumes."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 4,
+  "fields": {
+    "course": 2,
+    "title": "Ancient Civilizations",
+    "description": "Explore the origins of human societies and their development across the ancient world. From the ancient Near East and Egypt to the classical civilizations of Greece and Rome, delve into the political structures, cultural achievements, and daily life of these early societies. Understand their contributions to art, architecture, philosophy, and governance, and examine how their legacies continue to shape contemporary societies."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 5,
+  "fields": {
+    "course": 2,
+    "title": "Medieval History",
+    "description": "Embark on a journey through the medieval period, spanning roughly from the fall of the Western Roman Empire to the Renaissance. Investigate the rise of feudalism, the spread of Christianity, and the development of Islamic civilizations. Explore the dynamic interactions between different cultures, the flowering of intellectual and artistic achievements, and the tumultuous events such as the Crusades and the Black Death that reshaped Europe and the wider world during this era."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 6,
+  "fields": {
+    "course": 2,
+    "title": "Modern History",
+    "description": "Trace the transformation of the world from the Renaissance to the present day. Analyze the age of exploration and colonization, the emergence of nation-states, and the impact of scientific and industrial revolutions. Examine the rise of global empires, the struggles for independence and democracy, and the challenges of modernity, including the World Wars, the Cold War, and contemporary issues such as globalization and environmental sustainability."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 7,
+  "fields": {
+    "course": 3,
+    "title": "Poetry",
+    "description": "Delve into the world of poetry, exploring its diverse forms, styles, and themes across different cultures and time periods. From epic poetry to haiku, from sonnets to free verse, this module examines how poets use language, imagery, and rhythm to evoke emotions, convey ideas, and capture the essence of human experience. Analyze iconic poems and poets, uncovering the techniques and devices they employ to create powerful and evocative literary works. Gain insight into the enduring significance of poetry as a medium for self-expression, social commentary, and cultural reflection."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 8,
+  "fields": {
+    "course": 3,
+    "title": "Drama",
+    "description": "Enter the realm of drama, where the complexities of human relationships and societal issues come to life on stage. Explore the evolution of dramatic literature from ancient Greek tragedies to contemporary plays. Study the conventions of dramatic structure, character development, and dialogue, and examine how playwrights engage audiences through themes of love, power, justice, and identity. Analyze landmark plays and playwrights, considering their contributions to theatrical innovation and their impact on both literature and society. This module invites students to appreciate the artistry of drama and its ability to provoke thought, inspire empathy, and challenge perceptions."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 9,
+  "fields": {
+    "course": 3,
+    "title": "Literary Criticism",
+    "description": "Engage in critical analysis and scholarly discourse with this module on literary criticism. Explore different approaches and methodologies used to interpret and evaluate literary texts. From formalist and structuralist approaches to feminist and postcolonial perspectives, examine how critics uncover layers of meaning, explore cultural contexts, and assess the aesthetic qualities of literary works. Study influential critics and critical theories, and apply these frameworks to interpret a range of literary genres and themes. This module equips students with the tools to critically assess literature, deepen their understanding of literary theory, and participate in ongoing conversations about the significance and interpretation of literary texts."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 10,
+  "fields": {
+    "course": 4,
+    "title": "Physics",
+    "description": "Explore the fundamental laws and phenomena that govern the universe. From classical mechanics to quantum theory, delve into topics such as motion, forces, energy, electricity, magnetism, and the properties of matter. Investigate the principles behind concepts like Newton's laws of motion, Einstein's theory of relativity, and the behavior of waves and particles. This module emphasizes hands-on experimentation and problem-solving, enabling students to understand and apply the principles of physics in everyday life and technological advancements."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 11,
+  "fields": {
+    "course": 4,
+    "title": "Chemistry",
+    "description": "Uncover the building blocks of matter and the chemical reactions that drive natural processes and technological innovations. Study the periodic table, atomic structure, chemical bonding, and the principles of stoichiometry. Explore the properties and behaviors of elements, compounds, and mixtures, and delve into topics such as acids and bases, thermodynamics, kinetics, and organic chemistry. This module emphasizes laboratory work to observe and analyze chemical reactions, fostering an appreciation for the role of chemistry in understanding and manipulating the physical world."
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 12,
+  "fields": {
+    "course": 4,
+    "title": "Biology",
+    "description": "Investigate the diversity of life on Earth and the intricate systems that sustain living organisms. From cellular biology to ecosystems, explore topics such as genetics, evolution, ecology, anatomy, and physiology. Study the processes of life at various scales, from molecular interactions within cells to the complex dynamics of ecological communities. This module includes hands-on investigations of living organisms and their environments, providing insights into how biological principles shape our understanding of health, biodiversity, and sustainability."
+  }
+}
+]
