@@ -18,6 +18,8 @@ from braces.views import CsrfExemptMixin, JsonRequestResponseMixin
 from django.db.models import Count
 from .models import Subject
 
+from django.views.generic.detail import DetailView
+
 class OwnerMixin(object):
     def get_queryset(self):
         qs = super().get_queryset()
@@ -178,3 +180,7 @@ class CourseListView(TemplateResponseMixin, View):
         return self.render_to_response({'subjects': subjects,
                                         'subject': subject,
                                         'courses': courses})
+    
+class CourseDetailView(DetailView):
+    model = Course
+    template_name = 'courses/course/detail.html'
