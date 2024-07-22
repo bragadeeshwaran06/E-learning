@@ -171,6 +171,7 @@ class ContentOrderView(CsrfExemptMixin,JsonRequestResponseMixin,View):
 class CourseListView(TemplateResponseMixin, View):
     model = Course
     template_name = 'courses/course/list.html'
+    
     def get(self, request, subject=None):
         subjects = cache.get('all_subjects')
         if not subjects:
@@ -191,7 +192,7 @@ class CourseListView(TemplateResponseMixin, View):
             if not courses:
                 courses = all_courses
             cache.set('all_courses', courses)        
-            return self.render_to_response({'subjects': subjects,
+        return self.render_to_response({'subjects': subjects,
                                         'subject': subject,
                                         'courses': courses})
         
