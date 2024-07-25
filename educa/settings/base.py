@@ -54,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'courses.middleware.subdomain_course_middleware',
 ]
 
 ROOT_URLCONF = 'educa.urls'
@@ -79,7 +80,16 @@ WSGI_APPLICATION = 'educa.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'educa',
+        'USER': 'testpress',
+        'PASSWORD': 'testpress1$',
+        'HOST': "localhost",
+        "PORT": "5432"
+ }
+}
 
 
 # Password validation
@@ -119,6 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
@@ -151,5 +162,5 @@ CHANNEL_LAYERS = {
         },
 }
 
-# settings.py
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
